@@ -8,6 +8,7 @@ class Group(models.Model):
         db_column='gr_name'
     )
     group_start = models.DateField()
+    group_description = models.TextField(null=True, blank=True, db_column='gr_descr')
 
     class Meta:
         db_table = 'groups'
